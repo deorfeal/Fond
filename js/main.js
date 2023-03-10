@@ -1,4 +1,14 @@
-AOS.init();
+jQuery(document).ready(function () {
+    (function () {
+        // your page initialization code here
+        // the DOM will be available here
+        AOS.init({
+            duration: 750,
+            offset: 0, // offset (in px) from the original trigger point
+            anchorPlacement: 'top-bottom', // define where the AOS animations will be triggered
+        });
+    })();
+});
 
 $(function () {
 
@@ -129,4 +139,12 @@ new Swiper('.our-partners-swiper', {
             spaceBetween: 50,
         }
     }
+});
+
+$('.tell-row__btn ').on('click', function (event) {
+    var copyText = document.getElementById("tell-row-link");
+
+    copyText.select();
+
+    document.execCommand("copy");
 });

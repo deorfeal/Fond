@@ -1,9 +1,9 @@
 html,
 body {
 	height: 100%;
-	font-family: 'Neue Haas Grotesk Display Pro', sans-serif;
+	font-family: "Neue Haas Grotesk Display Pro", sans-serif;
 	font-weight: 500;
-	background: #EDEDED;
+	background: #ededed;
 }
 .wrapper {
 	display: flex;
@@ -55,3 +55,23 @@ body {
 	}
 }
 
+.dreadcrumbs {
+	display: flex;
+	align-items: center;
+	color: #000;
+	gap: 3px;
+	&__link {
+		font-size: 14px;
+		line-height: 17px;
+		color: #2594fb;
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+
+	&__text {
+		font-size: 14px;
+		line-height: 17px;
+		color: #000;
+	}
+}
