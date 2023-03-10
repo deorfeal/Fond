@@ -19,61 +19,15 @@ $(function () {
         $('.header').removeClass('header--active');
     });
 
+    $('.partners-bottom__link').on('click', function (event) {
+        $('.partners-column__more').toggleClass('partners-column__more--active');
+        $('.partners-bottom').toggleClass('partners-bottom--active');
+      
+    });
+
+  
+
 })
-
-// $(function () {
-//     var mixer = mixitup('.draws-info__inner', {
-//         load: {
-//             filter: '.draw'
-//         },
-//         animation: {
-//             enable: false
-//         },
-//     });
-// })
-
-// $(function () {
-//     var containerEl1 = document.querySelector('[data-ref="container-1"]');
-//     var containerEl2 = document.querySelector('[data-ref="container-2"]');
-
-//     var config = {
-//         controls: {
-//             scope: 'local'
-//         },
-//         load: {
-//             filter: '.item-first',
-//         },
-//         animation: {
-//             effects: 'fade scale(0%)',
-//             duration: 0,
-//         },
-//     };
-//     var confiG = {
-//         controls: {
-//             scope: 'local'
-//         },
-//         load: {
-//             filter: '.item-firstt',
-//         },
-//         animation: {
-//             effects: 'fade scale(0%)',
-//             duration: 0,
-//         },
-//     };
-
-//     var confiGG = {
-//         controls: {
-//             scope: 'local'
-//         },
-//         load: {
-//             filter: '.item-first',
-//         }
-//     };
-
-//     var mixer1 = mixitup(containerEl1, config);
-//     var mixer1 = mixitup(containerEl2, confiG);
-
-// })
 
 new Swiper('.top-swiper', {
     slidesPerView: 1,
@@ -88,15 +42,6 @@ new Swiper('.top-swiper', {
         type: 'bullets',
         clickable: true
     },
-    breakpoints: {
-        // 301: {
-        //     slidesPerView: 2.2,
-        //     centeredSlides: true,
-        //     initialSlide: 1,
-        //     slidesPerGroup: 1,
-        //     loopedSlides: 6,
-        // },
-    }
 });
 
 new Swiper('.partners-swiper', {
