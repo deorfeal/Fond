@@ -59,6 +59,7 @@ body {
 	display: flex;
 	align-items: center;
 	color: #000;
+	flex-wrap: wrap;
 	gap: 3px;
 	&__link {
 		font-size: 14px;
